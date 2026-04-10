@@ -39,11 +39,24 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
   <img width="726" height="618" alt="UDP 3" src="https://github.com/user-attachments/assets/edfc4277-af80-4fa4-8622-ffc03fcf4eb8" />
 
-- Configurar los parametros para que se decarge la informacion que se obtuvo en UDP y se pueda descarg un archivo llamado trafico_yol.pcap formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
+- Configurar los parametros para que se decarge la informacion que se obtuvo en UDP y se pueda descarg un archivo llamado trafico_yol.pcap con un peso de 727 KB formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
 
 <img width="627" height="496" alt="UDP 4" src="https://github.com/user-attachments/assets/ed06b4f7-2f02-401e-9033-bbcd9c9dd9a1" />
 
-- 
+- Trafico que se obtuvo del video
+
+  <img width="1539" height="943" alt="UDP 6" src="https://github.com/user-attachments/assets/feec0e5b-329f-48f4-900a-0fd0c8515578" />
+
+### Analisis del archivo con trafico de protocolo TCP 
+
+- Visualizar
+la conversación Encuentrar un paquete con protocolo TCP (o
+HTTP/HTTPS) Haga clic derecho y seleccione Follow TCP Stream Verá la
+comunicación completa para descargar el archivo yolov 8 n pt
+
+<img width="1902" height="994" alt="TCP ana 1" src="https://github.com/user-attachments/assets/f15a4885-ac25-41a7-8b32-27bd0c31718e" />
+
+
 
 
 
