@@ -13,4 +13,11 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
   <img width="1166" height="508" alt="Paso 1 tcp" src="https://github.com/user-attachments/assets/f5dabe65-481f-49cc-9106-e7f9cccd50ce" />
 
-- Configurar los parametros que la aplicacion YOLO validara en la simulacion como lo son la interfaz, tamaño del paquete,
+- Configurar los parametros que la aplicacion YOLO validara en la simulacion como lo son la interfaz, tamaño del paquete, una vez configurado el enterno se procede a generar trafico para que el YOLO recolecte los datos
+  
+  <img width="1467" height="522" alt="Paso 2 tcp" src="https://github.com/user-attachments/assets/cf0d3c59-0531-43e1-9ee9-c6c980b380ff" />
+
+- Detener la captura de datos y descargar la informacion que se genero, para este coso se obtuvo un archivo llamado descarga_tcp.pcap con un peso de 781 KB formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
+
+  
+
