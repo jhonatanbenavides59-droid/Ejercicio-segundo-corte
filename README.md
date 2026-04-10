@@ -1,4 +1,4 @@
-# Ejercicio-segundo-corte
+# Ejercicio segundo corte
 
 ### Actividad 
 
@@ -114,11 +114,11 @@ En cambio, este mismo mecanismo sería perjudicial para un video en vivo porque 
 
   Se indentifica que el orige es la IP  172.28.0.1 y el destino es 172.28.0.12 usando el filtro ip.src == se logro identificar que la ip origen envio 1550 paquetes mientras que la ip destino envio 1199
 
-  Origen
+  Origen:
   
 <img width="1879" height="998" alt="Origen" src="https://github.com/user-attachments/assets/e1824aeb-42a8-425c-86e2-ace7fa883970" />
 
-  Destino
+  Destino:
 
   <img width="1852" height="962" alt="Destino" src="https://github.com/user-attachments/assets/4adc12af-10fa-4f8c-aa49-77804b0d920e" />
 
