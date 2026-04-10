@@ -110,7 +110,17 @@ La aparición de tcp.analysis.retransmission en Wireshark indica que TCP tuvo qu
 Este mecanismo es crucial para la descarga de archivos porque en este tipo de tareas es indispensable que todos los datos lleguen completos, correctos y en el orden adecuado. La retransmisión de TCP asegura que, si algún paquete se pierde o llega con errores, sea reenviado hasta que el receptor lo confirme, garantizando así la integridad total del archivo descargado. Sin este mecanismo, el archivo podría quedar corrupto o inutilizable.
 En cambio, este mismo mecanismo sería perjudicial para un video en vivo porque las retransmisiones introducen retardos. Cuando un paquete se pierde, TCP espera y vuelve a enviarlo, lo que provoca pausas, cortes o desfases en la reproducción. En streaming de video en tiempo real, es preferible perder algunos datos antes que detener la transmisión, ya que lo importante es la continuidad y fluidez, no la exactitud absoluta de cada paquete.
 
+- Cómo podría usar un filtro como ip dst o ip src para aislar el tráfico únicamente con el servidor que le entregó el archivo del modelo
 
+  Se indentifica que el orige es la IP  172.28.0.1 y el destino es 172.28.0.12 usando el filtro ip.src == se logro identificar que la ip origen envio 1550 paquetes mientras que la ip destino envio 1199
+
+  Origen
+  
+<img width="1879" height="998" alt="Origen" src="https://github.com/user-attachments/assets/e1824aeb-42a8-425c-86e2-ace7fa883970" />
+
+  Destino
+
+  <img width="1852" height="962" alt="Destino" src="https://github.com/user-attachments/assets/4adc12af-10fa-4f8c-aa49-77804b0d920e" />
 
 
 
