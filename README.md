@@ -49,12 +49,46 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 ### Analisis del archivo con trafico de protocolo TCP 
 
-- Visualizar
-la conversación Encuentrar un paquete con protocolo TCP (o
+- la conversación encuentrar un paquete con protocolo TCP (o
 HTTP/HTTPS) Haga clic derecho y seleccione Follow TCP Stream Verá la
-comunicación completa para descargar el archivo yolov 8 n pt
+comunicación completa para descargar el archivo yolov8n.pt
 
 <img width="1902" height="994" alt="TCP ana 1" src="https://github.com/user-attachments/assets/f15a4885-ac25-41a7-8b32-27bd0c31718e" />
+
+- tcp
+flags syn 1 Filtra los paquetes que inician la conexión (el famoso
+three way handshake
+
+<img width="1666" height="950" alt="TCP ana 2" src="https://github.com/user-attachments/assets/c2c449bc-1174-4604-afe8-1c06169eb724" />
+
+- tcp
+analysis retransmission Muestra si hubo paquetes que se perdieron y tuvieron que
+reenviarse, una característica clave de TCP
+
+<img width="1580" height="935" alt="TCP ana 3" src="https://github.com/user-attachments/assets/92c05fa6-d5dc-4d27-9dc5-e64b1cbc4135" />
+
+
+### Analisis del archivo con trafico de protocolo UDP
+
+- la conversación encuentrar un paquete con protocolo UDP (o
+HTTP/HTTPS) Haga clic derecho y seleccione Follow UDP Stream Verá la
+comunicación completa para descargar el archivo yolov8n.pt
+
+<img width="1904" height="996" alt="UDP ana 1" src="https://github.com/user-attachments/assets/f366ab9a-8816-4070-9785-4ac025631bc3" />
+
+## Preguntas 
+- Ques es Yolo:
+ Es un algoritmo de detección de objetos basado en inteligencia artificial que permite identificar y localizar objetos en imágenes o videos en tiempo real, analizando la imagen completa en una sola pasada.
+
+- Cuales son sus caracteristicas principales:
+ Sus características principales destacan su alta velocidad, su capacidad para detectar y clasificar múltiples objetos al mismo tiempo y su eficiencia al reducir el tiempo de procesamiento.
+
+- Que arquitectura tiene
+  Se basa en una red neuronal convolucional (CNN), compuesta por un backbone que extrae características de la imagen, un neck que combina información a diferentes escalas y un head que realiza las predicciones finales de los objetos detectados.
+
+  
+
+
 
 
 
