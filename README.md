@@ -41,6 +41,8 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 - Configurar los parametros para que se decarge la informacion que se obtuvo en UDP y se pueda descarg un archivo llamado trafico_yol.pcap formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
 
+<img width="627" height="496" alt="UDP 4" src="https://github.com/user-attachments/assets/ed06b4f7-2f02-401e-9033-bbcd9c9dd9a1" />
+
 
 
 
