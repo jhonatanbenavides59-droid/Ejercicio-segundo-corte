@@ -101,7 +101,14 @@ La característica que hace a TCP más adecuado para la descarga de un modelo es
 
 La característica que hace a UDP más adecuado para la transmisión de video es su baja latencia y rapidez. UDP no verifica la entrega ni retransmite paquetes perdidos, lo que permite una comunicación más fluida y continua. En el video en tiempo real, es preferible mantener la transmisión sin interrupciones, aunque se pierda algo de información, antes que esperar a que se reenvíen los datos.
 
+- Observo algun tcp.analysis.retransmission, que significa si aparece alguno
 
+La aparición de tcp.analysis.retransmission en Wireshark indica que TCP tuvo que reenviar uno o más paquetes de datos porque no recibió la confirmación (ACK) del receptor dentro del tiempo esperado, para este caso se observo que tuvo una perdida de 95 paquetes donde el origen (172.28.0.1) envía datos al destino (172.28.0.12), algunas razones por las que puedo ocurrir son pérdida de paquetes, congestión de la red, retrasos, enlaces inestables o un receptor saturado.
+
+- Porque este mecanismo es crucial par la descarga de archivos perp seria perjudicial para un video en vivo
+
+Este mecanismo es crucial para la descarga de archivos porque en este tipo de tareas es indispensable que todos los datos lleguen completos, correctos y en el orden adecuado. La retransmisión de TCP asegura que, si algún paquete se pierde o llega con errores, sea reenviado hasta que el receptor lo confirme, garantizando así la integridad total del archivo descargado. Sin este mecanismo, el archivo podría quedar corrupto o inutilizable.
+En cambio, este mismo mecanismo sería perjudicial para un video en vivo porque las retransmisiones introducen retardos. Cuando un paquete se pierde, TCP espera y vuelve a enviarlo, lo que provoca pausas, cortes o desfases en la reproducción. En streaming de video en tiempo real, es preferible perder algunos datos antes que detener la transmisión, ya que lo importante es la continuidad y fluidez, no la exactitud absoluta de cada paquete.
 
 
 
