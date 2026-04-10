@@ -95,6 +95,12 @@ La descarga del modelo utiliza TCP porque este protocolo es confiable: garantiza
   
 En cambio, la transmisión de video simulada usa UDP porque este protocolo es más rápido y con menor latencia. UDP no verifica si los paquetes llegan ni los reenvía si se pierden, pero permite una transmisión continua y fluida. En video en tiempo real, es preferible perder algunos paquetes antes que detener la transmisión, ya que pequeños errores apenas se notan pero los retrasos sí afectan la experiencia.
 
+- Que caracteristica de cada protocolo los hace mas adecuados para cada tarea
+
+La característica que hace a TCP más adecuado para la descarga de un modelo es su confiabilidad: este protocolo garantiza que todos los datos lleguen completos, en el orden correcto y sin errores, ya que detecta pérdidas de paquetes y los retransmite. Esto es esencial cuando se descargan archivos importantes, porque incluso un pequeño error puede dañar el modelo.
+
+La característica que hace a UDP más adecuado para la transmisión de video es su baja latencia y rapidez. UDP no verifica la entrega ni retransmite paquetes perdidos, lo que permite una comunicación más fluida y continua. En el video en tiempo real, es preferible mantener la transmisión sin interrupciones, aunque se pierda algo de información, antes que esperar a que se reenvíen los datos.
+
 
 
 
