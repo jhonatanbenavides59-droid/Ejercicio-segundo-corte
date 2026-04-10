@@ -19,5 +19,6 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 - Detener la captura de datos y descargar la informacion que se genero, para este coso se obtuvo un archivo llamado descarga_tcp.pcap con un peso de 781 KB formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
 
+<img width="1900" height="943" alt="TCP Wire" src="https://github.com/user-attachments/assets/cbe4048d-36f8-4751-b074-8d44df266882" />
   
 
