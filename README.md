@@ -78,15 +78,22 @@ comunicación completa para descargar el archivo yolov8n.pt
 
 ## Preguntas 
 - Ques es Yolo:
+  
  Es un algoritmo de detección de objetos basado en inteligencia artificial que permite identificar y localizar objetos en imágenes o videos en tiempo real, analizando la imagen completa en una sola pasada.
 
 - Cuales son sus caracteristicas principales:
+  
  Sus características principales destacan su alta velocidad, su capacidad para detectar y clasificar múltiples objetos al mismo tiempo y su eficiencia al reducir el tiempo de procesamiento.
 
 - Que arquitectura tiene
+  
   Se basa en una red neuronal convolucional (CNN), compuesta por un backbone que extrae características de la imagen, un neck que combina información a diferentes escalas y un head que realiza las predicciones finales de los objetos detectados.
 
+- Porque cree que las descarga del modelo usa TCP y la trasnmision de video simulada usa UDP
+
+La descarga del modelo utiliza TCP porque este protocolo es confiable: garantiza que todos los datos lleguen completos, en orden y sin errores. Si algún paquete se pierde, TCP lo vuelve a enviar, lo cual es esencial cuando se descargan modelos de inteligencia artificial, ya que cualquier error podría corromper el archivo y hacerlo inutilizable.
   
+En cambio, la transmisión de video simulada usa UDP porque este protocolo es más rápido y con menor latencia. UDP no verifica si los paquetes llegan ni los reenvía si se pierden, pero permite una transmisión continua y fluida. En video en tiempo real, es preferible perder algunos paquetes antes que detener la transmisión, ya que pequeños errores apenas se notan pero los retrasos sí afectan la experiencia.
 
 
 
