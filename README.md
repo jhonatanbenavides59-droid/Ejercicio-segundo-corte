@@ -21,4 +21,12 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 <img width="1900" height="943" alt="TCP Wire" src="https://github.com/user-attachments/assets/cbe4048d-36f8-4751-b074-8d44df266882" />
   
+#### Segundo escenario
 
+-	Configurar el Google Collab para que use los recursos de la plataforma, para este caso es necesario instalar dos librerias mas una que permite leer imagenes, video, en conjunto de una libreria que me permmite captura de paquetes para poder analalizar el trafico.
+
+  <img width="377" height="68" alt="UDP 1" src="https://github.com/user-attachments/assets/60a0f261-400f-4de5-b155-4b45755c0eaa" />
+
+- 
+
+  
