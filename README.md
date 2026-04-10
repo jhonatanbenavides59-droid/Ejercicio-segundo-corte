@@ -6,5 +6,11 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 #### Primer escenario
 -	Configurar el Google Collab para que use los recursos de la plataforma
--	
+  
 <img width="362" height="358" alt="Entorno de ejecicion" src="https://github.com/user-attachments/assets/5b0bbb0f-8b92-4bcd-a4f8-0d934512d448" />
+
+- Realizar la configuración del entorno, instalar las bibliotecas de ultralytics, instalar tcpdum
+
+  <img width="1166" height="508" alt="Paso 1 tcp" src="https://github.com/user-attachments/assets/f5dabe65-481f-49cc-9106-e7f9cccd50ce" />
+
+- Configurar los parametros que la aplicacion YOLO validara en la simulacion como lo son la interfaz, tamaño del paquete,
