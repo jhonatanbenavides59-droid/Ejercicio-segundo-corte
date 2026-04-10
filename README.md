@@ -13,33 +13,33 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
   <img width="1166" height="508" alt="Paso 1 tcp" src="https://github.com/user-attachments/assets/f5dabe65-481f-49cc-9106-e7f9cccd50ce" />
 
-- Configurar los parametros que la aplicacion YOLO validara en la simulacion como lo son la interfaz, tamaño del paquete, una vez configurado el enterno se procede a generar trafico para que el YOLO recolecte los datos
+- Configurar los parámetros que la aplicación YOLO validara en la simulación como lo son la interfaz, tamaño del paquete, una vez configurado el entorno se procede a generar tráfico para que el YOLO recolecte los datos
   
   <img width="1467" height="522" alt="Paso 2 tcp" src="https://github.com/user-attachments/assets/cf0d3c59-0531-43e1-9ee9-c6c980b380ff" />
 
-- Detener la captura de datos y descargar la informacion que se genero, para este coso se obtuvo un archivo llamado descarga_tcp.pcap con un peso de 781 KB formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
+- Detener la captura de datos y descargar la información que se generó, para este coso se obtuvo un archivo llamado descarga_tcp.pcap con un peso de 781 KB formato compatible con el programa WireShark donde se realizara el análisis de la información. 
 
 <img width="1900" height="943" alt="TCP Wire" src="https://github.com/user-attachments/assets/cbe4048d-36f8-4751-b074-8d44df266882" />
   
 #### Segundo escenario
 
--	Configurar el Google Collab para que use los recursos de la plataforma, para este caso es necesario instalar dos librerias mas una que permite leer imagenes, video, en conjunto de una libreria que me permmite captura de paquetes para poder analalizar el trafico.
+-	Configurar el Google Collab para que use los recursos de la plataforma, para este caso es necesario instalar dos librerías más una que permite leer imágenes, video, en conjunto de una librería que me permite captura de paquetes para poder analizar el tráfico.
 
   <img width="377" height="68" alt="UDP 1" src="https://github.com/user-attachments/assets/60a0f261-400f-4de5-b155-4b45755c0eaa" />
 
-- Desde el equipo se cargara un video llamado Video Test que contiene una autopista con trafico, para poder obtener datos
+- Desde el equipo se cargará un video llamado Video Test que contiene una autopista con tráfico, para poder obtener datos
 
 <img width="539" height="111" alt="UDP 2" src="https://github.com/user-attachments/assets/ef599d0a-f651-4e94-9d78-422916afcf0d" />
 
-- Configurar los parametros que la aplicacion YOLO validara en la simulacion como lo son la interfaz, tamaño del paquete, una vez configurado el enterno se procede a generar trafico para que el YOLO recolecte los datos
+- Configurar los parámetros que la aplicación YOLO validara en la simulación como lo son la interfaz, tamaño del paquete, una vez configurado el entorno se procede a generar tráfico para que el YOLO recolecte los datos
 
   <img width="608" height="721" alt="UDP" src="https://github.com/user-attachments/assets/68f76fdc-0e58-4e7f-938c-520ab9d47e78" />
 
-- Confirmacion de que YOLO esta realiando un analis del video.
+- Confirmación de que YOLO está realizando análisis del video.
 
   <img width="726" height="618" alt="UDP 3" src="https://github.com/user-attachments/assets/edfc4277-af80-4fa4-8622-ffc03fcf4eb8" />
 
-- Configurar los parametros para que se decarge la informacion que se obtuvo en UDP y se pueda descarg un archivo llamado trafico_yol.pcap con un peso de 727 KB formato compatible con el programa WireShark donde se relizara el analisis de la informacion. 
+- Configurar los parámetros para que se descargue la información que se obtuvo en UDP y se pueda descargar un archivo llamado trafico_yol.pcap con un peso de 727 KB formato compatible con el programa WireShark donde se realizara el análisis de la información. 
 
 <img width="627" height="496" alt="UDP 4" src="https://github.com/user-attachments/assets/ed06b4f7-2f02-401e-9033-bbcd9c9dd9a1" />
 
@@ -49,26 +49,20 @@ Usando la plataforma de Google Collab, que nos permite simular un entorno Linux 
 
 ### Analisis del archivo con trafico de protocolo TCP 
 
-- la conversación encuentrar un paquete con protocolo TCP (o
-HTTP/HTTPS) Haga clic derecho y seleccione Follow TCP Stream Verá la
-comunicación completa para descargar el archivo yolov8n.pt
+- Haga clic derecho y seleccione Follow TCP Stream Verá la comunicación completa para descargar el archivo yolov8n.pt
 
 <img width="1902" height="994" alt="TCP ana 1" src="https://github.com/user-attachments/assets/f15a4885-ac25-41a7-8b32-27bd0c31718e" />
 
-- tcp
-flags syn 1 Filtra los paquetes que inician la conexión (el famoso
-three way handshake
+- tcp.flags.syn ==1 filtra los paquetes que inician la conexión (el famoso three way handshake
 
 <img width="1666" height="950" alt="TCP ana 2" src="https://github.com/user-attachments/assets/c2c449bc-1174-4604-afe8-1c06169eb724" />
 
-- tcp
-analysis retransmission Muestra si hubo paquetes que se perdieron y tuvieron que
-reenviarse, una característica clave de TCP
+- tcp.analysis.retransmission muestra si hubo paquetes que se perdieron y tuvieron que reenviarse, una característica clave de TCP
 
 <img width="1580" height="935" alt="TCP ana 3" src="https://github.com/user-attachments/assets/92c05fa6-d5dc-4d27-9dc5-e64b1cbc4135" />
 
 
-### Analisis del archivo con trafico de protocolo UDP
+### Análisis del archivo con tráfico de protocolo UDP
 
 - la conversación encuentrar un paquete con protocolo UDP (o
 HTTP/HTTPS) Haga clic derecho y seleccione Follow UDP Stream Verá la
@@ -79,40 +73,40 @@ comunicación completa para descargar el archivo yolov8n.pt
 ## Preguntas 
 - Ques es Yolo:
   
- Es un algoritmo de detección de objetos basado en inteligencia artificial que permite identificar y localizar objetos en imágenes o videos en tiempo real, analizando la imagen completa en una sola pasada.
+Es un algoritmo de detección de objetos basado en inteligencia artificial que permite identificar y localizar objetos en imágenes o videos en tiempo real, analizando la imagen completa en una sola pasada.
 
-- Cuales son sus caracteristicas principales:
+- Cuáles son sus características principales:
   
  Sus características principales destacan su alta velocidad, su capacidad para detectar y clasificar múltiples objetos al mismo tiempo y su eficiencia al reducir el tiempo de procesamiento.
 
 - Que arquitectura tiene
   
-  Se basa en una red neuronal convolucional (CNN), compuesta por un backbone que extrae características de la imagen, un neck que combina información a diferentes escalas y un head que realiza las predicciones finales de los objetos detectados.
+Se basa en una red neuronal convolucional (CNN), compuesta por un backbone que extrae características de la imagen, un neck que combina información a diferentes escalas y un head que realiza las predicciones finales de los objetos detectados.
 
-- Porque cree que las descarga del modelo usa TCP y la trasnmision de video simulada usa UDP
+- Porque cree que las descarga del modelo usa TCP y la transmisión de video simulada usa UDP
 
 La descarga del modelo utiliza TCP porque este protocolo es confiable: garantiza que todos los datos lleguen completos, en orden y sin errores. Si algún paquete se pierde, TCP lo vuelve a enviar, lo cual es esencial cuando se descargan modelos de inteligencia artificial, ya que cualquier error podría corromper el archivo y hacerlo inutilizable.
   
 En cambio, la transmisión de video simulada usa UDP porque este protocolo es más rápido y con menor latencia. UDP no verifica si los paquetes llegan ni los reenvía si se pierden, pero permite una transmisión continua y fluida. En video en tiempo real, es preferible perder algunos paquetes antes que detener la transmisión, ya que pequeños errores apenas se notan pero los retrasos sí afectan la experiencia.
 
-- Que caracteristica de cada protocolo los hace mas adecuados para cada tarea
+- Que característica de cada protocolo los hace más adecuados para cada tarea
 
 La característica que hace a TCP más adecuado para la descarga de un modelo es su confiabilidad: este protocolo garantiza que todos los datos lleguen completos, en el orden correcto y sin errores, ya que detecta pérdidas de paquetes y los retransmite. Esto es esencial cuando se descargan archivos importantes, porque incluso un pequeño error puede dañar el modelo.
 
 La característica que hace a UDP más adecuado para la transmisión de video es su baja latencia y rapidez. UDP no verifica la entrega ni retransmite paquetes perdidos, lo que permite una comunicación más fluida y continua. En el video en tiempo real, es preferible mantener la transmisión sin interrupciones, aunque se pierda algo de información, antes que esperar a que se reenvíen los datos.
 
-- Observo algun tcp.analysis.retransmission, que significa si aparece alguno
+- Observo algún tcp.analysis.retransmission, que significa si aparece alguno
 
-La aparición de tcp.analysis.retransmission en Wireshark indica que TCP tuvo que reenviar uno o más paquetes de datos porque no recibió la confirmación (ACK) del receptor dentro del tiempo esperado, para este caso se observo que tuvo una perdida de 95 paquetes donde el origen (172.28.0.1) envía datos al destino (172.28.0.12), algunas razones por las que puedo ocurrir son pérdida de paquetes, congestión de la red, retrasos, enlaces inestables o un receptor saturado.
+La aparición de tcp.analysis.retransmission en Wireshark indica que TCP tuvo que reenviar uno o más paquetes de datos porque no recibió la confirmación (ACK) del receptor dentro del tiempo esperado, para este caso se observó que tuvo una pérdida de 95 paquetes donde el origen (172.28.0.1) envía datos al destino (172.28.0.12), algunas razones por las que puedo ocurrir son pérdida de paquetes, congestión de la red, retrasos, enlaces inestables o un receptor saturado.
 
-- Porque este mecanismo es crucial par la descarga de archivos perp seria perjudicial para un video en vivo
+- Porque este mecanismo es crucial para la descarga de archivos pero sería perjudicial para un video en vivo
 
 Este mecanismo es crucial para la descarga de archivos porque en este tipo de tareas es indispensable que todos los datos lleguen completos, correctos y en el orden adecuado. La retransmisión de TCP asegura que, si algún paquete se pierde o llega con errores, sea reenviado hasta que el receptor lo confirme, garantizando así la integridad total del archivo descargado. Sin este mecanismo, el archivo podría quedar corrupto o inutilizable.
 En cambio, este mismo mecanismo sería perjudicial para un video en vivo porque las retransmisiones introducen retardos. Cuando un paquete se pierde, TCP espera y vuelve a enviarlo, lo que provoca pausas, cortes o desfases en la reproducción. En streaming de video en tiempo real, es preferible perder algunos datos antes que detener la transmisión, ya que lo importante es la continuidad y fluidez, no la exactitud absoluta de cada paquete.
 
 - Cómo podría usar un filtro como ip dst o ip src para aislar el tráfico únicamente con el servidor que le entregó el archivo del modelo
 
-  Se indentifica que el orige es la IP  172.28.0.1 y el destino es 172.28.0.12 usando el filtro ip.src == se logro identificar que la ip origen envio 1550 paquetes mientras que la ip destino envio 1199
+Se identifica que el origen es la IP  172.28.0.1 y el destino es 172.28.0.12 usando el filtro ip.src == se logro identificar que la ip origen envió 1550 paquetes mientras que la ip destino envió 1199
 
   Origen:
   
